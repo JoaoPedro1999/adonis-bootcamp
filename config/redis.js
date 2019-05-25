@@ -32,10 +32,10 @@ module.exports = {
   |
   */
   local: {
-    host: 'redis-17361.c114.us-east-1-4.ec2.cloud.redislabs.com:17361',
+    host: '127.0.0.1',
     port: 6379,
-    password: 'WA2TOCJ04vLaslKRWS4SoTXzbUo0brVg',
-    db: 'adonis',
+    password: null,
+    db: 0,
     keyPrefix: ''
   },
 
@@ -50,16 +50,16 @@ module.exports = {
   cluster: {
     clusters: [
       {
-        host: 'redis-17361.c114.us-east-1-4.ec2.cloud.redislabs.com:17361',
+        host: '127.0.0.1',
         port: 6379,
-        password: 'WA2TOCJ04vLaslKRWS4SoTXzbUo0brVg',
-        db: 'adonis'
+        password: null,
+        db: 0
       },
       {
-        host: 'redis-17361.c114.us-east-1-4.ec2.cloud.redislabs.com:17361',
+        host: '127.0.0.1',
         port: 6380,
-        password: 'WA2TOCJ04vLaslKRWS4SoTXzbUo0brVg',
-        db: 'adonis'
+        password: null,
+        db: 0
       }
     ]
   }
