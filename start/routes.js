@@ -6,7 +6,7 @@ Route.post('/session', 'SessionController.store').validator('Session')
 Route.post('/passwords', 'ForgotPasswordCOntroller.store').validator(
   'ForgotPassword'
 )
-Route.put('/passwords', 'ForgotPasswordCOntroller.update').validator('Session')
+Route.put('/passwords', 'ForgotPasswordController.update').validator('Session')
 
 Route.get('/files/:id', 'FileController.show')
 
